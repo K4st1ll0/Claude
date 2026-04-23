@@ -1,0 +1,2400 @@
+$# Session file patran.ses.01 started recording at 20-Apr-26 12:06:22
+$# Build: 31.2.002054-7b1f5519 Thu Mar 05 16:36:23 CUT 2026
+$# Recorded by: Patran 2025.2  (Student Edition)
+uil_file_open.go( "C:\Users\Pablo Castillo\Desktop\MUSE\SEGUNDO CUATRIMEST" // @
+"RE\ESTRUCTURAS\TRABAJO HECHO A MANO\Trabajo_EUE_25-26\05_FEM\Modos_propio" // @
+"s.db" )
+$# Database version 3.37 created by Patran 2025.2  (Student Edition) 
+$# successfully opened.
+$# Attaching Direct Results Access file: "C:\Users\Pablo 
+$# Castillo\Desktop\MUSE\SEGUNDO CUATRIMESTRE\ESTRUCTURAS\TRABAJO HECHO A 
+$# MANO\Trabajo_EUE_25-26\05_FEM\sfem_eue.h5"
+$# *** Begin: Attach Result File ***
+$# Total execution time in real seconds:        1.000
+$# Total execution time in CPU  seconds:        0.016
+$# *** End:   Attach Result File ***
+$# Appending to existing journal file C:\Users\Pablo 
+$# Castillo\Desktop\MUSE\SEGUNDO CUATRIMESTRE\ESTRUCTURAS\TRABAJO HECHO A 
+$# MANO\Trabajo_EUE_25-26\05_FEM\Modos_propios.db.jou at 20-Apr-26 12:06:23
+$# FLEXlm initialization complete.  Acquiring license(s)...
+$# License File: EDU
+$# Patran 2025.2  (Student Edition) has obtained 0 concurrent license(s) from 
+$# FLEXlm per a request to execute on Windows node DESKTOP-0MNNQU5(
+$# 68ecc5ad7ef6) (Windows 6.2 (Build 9200: Service Pack 0)) at 20-Apr-26 
+$# 12:06:23.
+$# Begin Reading RMB Menu definitions
+$# Done Reading RMB Menu definitions
+$# Loading dynamic library C:\Program 
+$# Files\MSC.Software\NaPa_SE\20252\Patran\bin\exe\loads_browser.dll
+$# MSC.SMDL shared library 'Loads Browser', Version 2025, Revision 3, Patch 0,
+$#  has been loaded for: MSC.Patran.
+ga_view_aa_set( -49.968410, -1.546379, -127.397789 )
+ga_view_aa_set( -101.075485, -10.625856, 162.368332 )
+ga_view_aa_set( -77.490074, 0.929843, -150.162216 )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_aa_set( 180., 90., 180. )
+ga_view_aa_set( 180., 90., 180. )
+ga_view_aa_set( 180., -90., 180. )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_center_set( 0.118520, -0.083525 )
+ga_view_center_set( 0.146816, -0.101917 )
+ga_view_center_set( 0.118520, -0.083575 )
+ga_view_center_set( 0.093369, -0.067447 )
+ga_view_center_set( 0.071013, -0.053190 )
+ga_view_center_set( 0.093448, -0.067486 )
+gm_visibility_widget( "Elm 2 4 102:104 109:112 117:120 125:128 136:143 200" // @
+":202 204:208 211 220:225 234:241 300:302 304:308 311 320:325 334:345 400:" // @
+"402 404:408 411 420:423 432:447 452:459 1008:1013 1022:1025 1040 1041 203" // @
+"2:2039 2041 2042 2048 2049 3032:3039 3041 3042 3048 3049 4032:4041 4048 4049" @
+, FALSE )
+ga_view_aa_set( -171.920303, 8.809158, -176.326080 )
+ga_view_aa_set( -87.146294, -8.526731, -104.418884 )
+ga_view_aa_set( -64.088051, 21.766302, -146.030670 )
+ga_view_aa_set( -110.388573, 8.346542, -152.423370 )
+ga_view_aa_set( -85.532112, 2.386282, 176.741684 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 1: Freq.=206.202", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 1: Freq.=206.202", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -75.568573, 0.098974, 172.158035 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 2: Freq.=248.231", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 2: Freq.=248.231", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 3: Freq.=256.042", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 3: Freq.=256.042", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 4: Freq.=269.806", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 4: Freq.=269.806", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 5: Freq.=298.131", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 5: Freq.=298.131", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 6: Freq.=352.587", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 6: Freq.=352.587", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 7: Freq.=429.784", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 7: Freq.=429.784", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 8: Freq.=443.013", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 8: Freq.=443.013", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 9: Freq.=447.655", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 9: Freq.=447.655", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 10: Freq.=466.834", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 10: Freq.=466.834", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 5: Freq.=298.131", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 5: Freq.=298.131", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 6: Freq.=352.587", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 6: Freq.=352.587", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 1: Freq.=206.202", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 1: Freq.=206.202", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 2: Freq.=248.231", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 2: Freq.=248.231", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 3: Freq.=256.042", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 3: Freq.=256.042", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 4: Freq.=269.806", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 4: Freq.=269.806", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 5: Freq.=298.131", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 5: Freq.=298.131", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+material.rename( "PCB_PROC", "PCB_PROC" )
+material.create3( "Analysis code ID", 1, "Analysis type ID", 1, "PCB_PROC", 4, @
+ "", "Isotropic", 1, "Directionality", 1, "Linearity", 1, "Homogeneous", 0,  @
+"Linear Elastic", 1, "Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, @
+ 0], "Active Flag", 1, "Modify", 31, "External Flag", FALSE, "Property IDs", [ @
+"Elastic Modulus", ""], [2, 0], "Property Values", ["7E+10", ""], "#FFA2B216" )
+$# MSC.Patran Analysis Manager NOT licensed or installed!
+$#  Beginning analysis of  SFEM_EUE
+jobfile.open( "SFEM_EUE", "ANALYZE NO JOBFILE" )
+$# Question from application APP INTERFACES
+$#     The jobname (SFEM_EUE) is already defined in the database. Do you wish 
+$# to overwrite?
+$? YES 6016027 
+msc_delete_old_files( "SFEM_EUE", ".bdf", ".h5" )
+$# Question from application APP INTERFACES
+$#     Files from a previous analysis conflict with the current job name: 
+$# "SFEM_EUE".  These files are SFEM_EUE.f04, SFEM_EUE.f06, SFEM_EUE.log, 
+$# SFEM_EUE.h5, SFEM_EUE.bdf.  Will you permit deletion of these files?
+$? YES 6022037 
+$# Warning reported from application APP INTERFACES
+$#     The attachment to the file C:\Users\Pablo 
+$# Castillo\Desktop\MUSE\SEGUNDO CUATRIMESTRE\ESTRUCTURAS\TRABAJO HECHO A 
+$# MANO\Trabajo_EUE_25-26\05_FEM\sfem_eue.h5 has been deleted because that 
+$# file is being deleted.
+jobfile.write_spl( "/* Jobfile for PATNAS created %A% at %A% */", ["20-Apr-26" @
+, "12:17:00"] )
+jobfile.writec( "", "TRANSLATOR = pat3nas" )
+jobfile.writec( "DATABASE", "C:\Users\Pablo Castillo\Desktop\MUSE\SEGUNDO " // @
+"CUATRIMESTRE\ESTRUCTURAS\TRABAJO HECHO A MANO\Trabajo_EUE_25-26\05_FEM\Mo" // @
+"dos_propios.db" )
+jobfile.writec( "JOBNAME", "SFEM_EUE" )
+jobfile.writec( "ANALYSIS TITLE", "" )
+jobfile.writec( "ANALYSIS SUBTITLE", "" )
+jobfile.writec( "ANALYSIS LABEL", "" )
+jobfile.writec( "", "" )
+jobfile.writec( "OBJECT", "Entire Model" )
+jobfile.writec( "METHOD", "Full Run" )
+jobfile.writec( "", "" )
+jobfile.writec( "MODEL SUFFIX", ".bdf" )
+jobfile.writec( "RESULTS SUFFIX", ".h5" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * File Search Path Declaration" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "File Search Path", "C:\Users\Pablo Castillo" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\helpfiles" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\alters" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\icons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\icons\RibbonIcons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\bin" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\bin\exe" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\mscexplore_files\" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\mscprocor_files\dmap" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\mscprocor_files\plb" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\mscprocor_files\lib" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\mscprocor_files\icons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\shareware\msc\unsupported\utilities\icons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\shareware\msc\unsupported\utilities\plb" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\shareware\msc\unsupported\utilities\extra_files" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Translation Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "DATA OUTPUT", "HDF5C+PRINT" )
+jobfile.writec( "OUTPUT2 REQUESTS", "P3 Built In" )
+jobfile.writec( "OUTPUT2 FORMAT", "Binary" )
+jobfile.writec( "HDF5OUT PRECISION", "HDF5P 32-BIT" )
+jobfile.writec( "DIVISION TOLERANCE", "1.0e-08" )
+jobfile.writec( "NUMERICAL TOLERANCE", "1.0e-04" )
+jobfile.writec( "WRITING TOLERANCE", "1.0e-21" )
+jobfile.writec( "GEOM CHECK", "INFORM" )
+jobfile.writec( "SORTED BULK", "NO" )
+jobfile.writec( "CARD FORMAT", "either" )
+jobfile.writec( "NODE COORDINATES", "reference frame" )
+jobfile.writec( "COORD COORDINATES", "global" )
+jobfile.writec( "MSC.Nastran VERSION", "2025.2" )
+jobfile.writec( "WRITE STORED PRECISION", "TRUE" )
+jobfile.writec( "WRITE IN FREE FORMAT", "FALSE" )
+jobfile.writec( "PROPS ON ELEM ENTRY", "FALSE" )
+jobfile.writec( "CONTINUATION ENTRY", "FALSE" )
+jobfile.writec( "PCOMPG ENTRY", "TRUE" )
+jobfile.writec( "CONVERT CBAR CBEAM", "FALSE" )
+jobfile.writec( "ITERATIVE SOLVER", "FALSE" )
+jobfile.writei( "SUPER ELEMENT 0", 0 )
+jobfile.writec( "MODEL TOLERANCE", "0.0049999999" )
+jobfile.writec( "ELEMENT PROPERTY OFFSET", "0" )
+jobfile.writec( "MATERIAL PROPERTY OFFSET", "0" )
+jobfile.writec( "TABLE OFFSET", "0" )
+jobfile.writec( "LOAD SET OFFSET", "0" )
+jobfile.writec( "LOAD CASE OFFSET", "0" )
+jobfile.writec( "CONTROL SET OFFSET", "0" )
+jobfile.writec( "RIGID ELEMENT OFFSET", "0" )
+jobfile.writec( "SCALAR POINT OFFSET", "0" )
+jobfile.writec( "BEGINNING CONTINUATION MARKER", "+      A" )
+jobfile.writec( "NUMBER ONLY", "ON" )
+jobfile.writec( "BEGINNING NUMBER", "OFF" )
+jobfile.writec( "TRAILING NUMBER", "OFF" )
+jobfile.writec( "SYNTAX NUMBER", "ON" )
+jobfile.writec( "SYNTAX MARKER", "." )
+jobfile.writec( "EXTERNAL SUPERELEMENT METHOD", "NONE" )
+jobfile.writec( "USE LEGACY PRECISION", "FALSE" )
+jobfile.writec( "EXPONENTIAL WRITE", "As Needed" )
+jobfile.writec( "EXPONENTIAL FORM", "Condensed" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Solution Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "SOLUTION TYPE", "NORMAL MODES" )
+jobfile.writei( "SOLUTION SEQUENCE", 103 )
+jobfile.writec( "DATABASE RUN", "ON" )
+jobfile.writec( "INTERACTIVE MODES", "OFF" )
+jobfile.writec( "CYCLIC SYMMETRY", "OFF" )
+jobfile.writec( "AUTOMATIC CONSTRAINTS", "ON" )
+jobfile.writec( "SHELL NORMAL TOLERANCE", "" )
+jobfile.writec( "MASS CALCULATION", "Lumped" )
+jobfile.writec( "DATA DECK ECHO", "None" )
+jobfile.writec( "PLATE RZ STIFFNESS FACTOR", "100.0" )
+jobfile.writec( "MAXIMUM PRINTED LINES", "" )
+jobfile.writec( "MAXIMUM RUN TIME", "" )
+jobfile.writec( "WT-MASS CONVERSION", "1.0" )
+jobfile.writec( "NODE ID FOR WT-GENER", "" )
+jobfile.writec( "RIGID ELEMENT TYPE", "LINEAR" )
+jobfile.writec( "USE SOL600", "OFF" )
+jobfile.writec( "CONTACT-AUTO-CONTACT-GENERATION", "OFF" )
+jobfile.writei( "CONTACT-SEGMENT-CONTROL METHOD", 0 )
+jobfile.writei( "CONTACT-DEFORMABLE-DEFORMABLE METHOD", 0 )
+jobfile.writei( "CONTACT-LINCNT METHOD", 0 )
+jobfile.writec( "RESIDUAL VECTOR", "Nastran Default" )
+jobfile.writec( "NEF STRESS UNITS", "MPA" )
+jobfile.writec( "NEF STRESS COMBINATION", "ABSMAXPR" )
+jobfile.writec( "NEF RESULT LOCATION", "NODA" )
+jobfile.writec( "NEF RECOVERY LOCATION", "CORNER" )
+jobfile.writec( "NEF LAYER LOCATION", "WORST" )
+jobfile.writec( "NEF INTERPOLATION LIMIT", "0" )
+jobfile.writec( "NEF LEVEL OF MESSAGE", "0" )
+jobfile.writec( "NEF NUMBER OF THREADS", "1" )
+jobfile.writer( "NEF CERTAINTY OF SURVIVAL", 50. )
+jobfile.writer( "NEF OVERALL SCALE FACTOR", 1. )
+jobfile.writer( "NEF TOP STRESS PERCENTAGE FILTER", 100. )
+jobfile.writer( "NEF TOP DAMAGE PERCENTAGE FILTER", 100. )
+jobfile.writec( "NEF TIME HISTORY DIRECTORY", "./" )
+jobfile.writei( "NEF MAX LOAD PER EVENT", 1 )
+jobfile.writec( "NEF EVENT DATA", "0" )
+jobfile.writec( "NEF LOAD SEQUENCE DATA", "0" )
+jobfile.writec( "USE CONTACT TABLE", "OFF" )
+jobfile.writec( "INITIAL CONTACTPAIR LOADCASE NAME", "" )
+jobfile.writei( "MDOF DATA", 0 )
+jobfile.writec( "CELL WRITE", "ON" )
+jobfile.writei( "CELL INPUT 0", 0 )
+jobfile.writec( "FMS WRITE", "OFF" )
+jobfile.writei( "FMS INPUT 0", 0 )
+jobfile.writec( "EXEC WRITE", "OFF" )
+jobfile.writei( "EXEC INPUT 0", 0 )
+jobfile.writec( "CASE WRITE", "OFF" )
+jobfile.writei( "CASE INPUT 0", 165 )
+jobfile.writec( "CASE INPUT 1", "$ MSC.Nastran input file created on March" // @
+"     22, 2023 at 09:54:42 by" )
+jobfile.writec( "CASE INPUT 2", "$ Patran 2021.4" )
+jobfile.writec( "CASE INPUT 3", "$" )
+jobfile.writec( "CASE INPUT 4", "$ Using Nastran default values for RESVEC" )
+jobfile.writec( "CASE INPUT 5", "$ Direct Text Input for this Subcase" )
+jobfile.writec( "CASE INPUT 6", "$ Direct Text Input for Bulk Data" )
+jobfile.writec( "CASE INPUT 7", "$ Elements and Element Properties for reg" // @
+"ion : 01_t-wall-delgadas" )
+jobfile.writec( "CASE INPUT 8", "$>PSHELL*  1               1             " // @
+"  6.9999998-4     1" )
+jobfile.writec( "CASE INPUT 9", "$ Pset: ""01_t-wall-delgadas"" will be im" // @
+"ported as: ""pshell.1""" )
+jobfile.writec( "CASE INPUT 10", "$>CQUAD4   1009    1       111     201  " // @
+"   202     106" )
+jobfile.writec( "CASE INPUT 11", "$ Elements and Element Properties for re" // @
+"gion : 05_t-tapa" )
+jobfile.writec( "CASE INPUT 12", "$>PSHELL*  2               1            " // @
+"   5.0000002-4     1" )
+jobfile.writec( "CASE INPUT 13", "$ Pset: ""05_t-tapa"" will be imported a" // @
+"s: ""pshell.2""" )
+jobfile.writec( "CASE INPUT 14", "$>CQUAD4   4056    2       445     469  " // @
+"   470     446" )
+jobfile.writec( "CASE INPUT 15", "$ Elements and Element Properties for re" // @
+"gion : 06_t-rig-base" )
+jobfile.writec( "CASE INPUT 16", "$>PSHELL   3       1       .005    1    " // @
+"           1" )
+jobfile.writec( "CASE INPUT 17", "$ Pset: ""06_t-rig-base"" will be import" // @
+"ed as: ""pshell.3""" )
+jobfile.writec( "CASE INPUT 18", "$>CQUAD4   1008    3       109     200  " // @
+"   201     111" )
+jobfile.writec( "CASE INPUT 19", "$ Elements and Element Properties for re" // @
+"gion : 07_t-bandejas" )
+jobfile.writec( "CASE INPUT 20", "$>PSHELL*  4               1            " // @
+"   6.9999998-4     1" )
+jobfile.writec( "CASE INPUT 21", "$ Pset: ""07_t-bandejas"" will be import" // @
+"ed as: ""pshell.4""" )
+jobfile.writec( "CASE INPUT 22", "$>CQUAD4   1000    4       100     101  " // @
+"   103     102" )
+jobfile.writec( "CASE INPUT 23", "$ Elements and Element Properties for re" // @
+"gion : 11_ESQ_xp_yp" )
+jobfile.writec( "CASE INPUT 24", "$>PBARL    5       1               BAR" )
+jobfile.writec( "CASE INPUT 25", "$ Pset: ""11_ESQ_xp_yp"" will be importe" // @
+"d as: ""pbarl.5""" )
+jobfile.writec( "CASE INPUT 26", "$>CBAR     104     5       109     200  " // @
+"   1.      0.      0." )
+jobfile.writec( "CASE INPUT 27", "$ Elements and Element Properties for re" // @
+"gion : 11_ESQ_xn_yp" )
+jobfile.writec( "CASE INPUT 28", "$>PBARL    6       1               BAR" )
+jobfile.writec( "CASE INPUT 29", "$ Pset: ""11_ESQ_xn_yp"" will be importe" // @
+"d as: ""pbarl.6""" )
+jobfile.writec( "CASE INPUT 30", "$>CBAR     102     6       207     121  " // @
+"   1.      0.      0." )
+jobfile.writec( "CASE INPUT 31", "$ Elements and Element Properties for re" // @
+"gion : 11_ESQ_xn_yn" )
+jobfile.writec( "CASE INPUT 32", "$>PBARL    7       1               BAR" )
+jobfile.writec( "CASE INPUT 33", "$ Pset: ""11_ESQ_xn_yn"" will be importe" // @
+"d as: ""pbarl.7""" )
+jobfile.writec( "CASE INPUT 34", "$>CBAR     100     7       141     219  " // @
+"   1.      0.      0." )
+jobfile.writec( "CASE INPUT 35", "$ Elements and Element Properties for re" // @
+"gion : 11_ESQ_xp_yn" )
+jobfile.writec( "CASE INPUT 36", "$>PBARL    8       1               BAR" )
+jobfile.writec( "CASE INPUT 37", "$ Pset: ""11_ESQ_xp_yn"" will be importe" // @
+"d as: ""pbarl.8""" )
+jobfile.writec( "CASE INPUT 38", "$>CBAR     103     8       213     133  " // @
+"   1.      0.      0." )
+jobfile.writec( "CASE INPUT 39", "$ Elements and Element Properties for re" // @
+"gion : 12_RIG-V1_xp" )
+jobfile.writec( "CASE INPUT 40", "$>PBARL    9       1               BAR" )
+jobfile.writec( "CASE INPUT 41", "$ Pset: ""12_RIG-V1_xp"" will be importe" // @
+"d as: ""pbarl.9""" )
+jobfile.writec( "CASE INPUT 42", "$>CBAR     109     9       110     205  " // @
+"   1.      0.      0." )
+jobfile.writec( "CASE INPUT 43", "$ Elements and Element Properties for re" // @
+"gion : 12_RIG-V1_xn" )
+jobfile.writec( "CASE INPUT 44", "$>PBARL    10      1               BAR" )
+jobfile.writec( "CASE INPUT 45", "$ Pset: ""12_RIG-V1_xn"" will be importe" // @
+"d as: ""pbarl.10""" )
+jobfile.writec( "CASE INPUT 46", "$>CBAR     105     10      142     223  " // @
+"   1.      0.      0." )
+jobfile.writec( "CASE INPUT 47", "$ Elements and Element Properties for re" // @
+"gion : 12_RIG-V1_yp" )
+jobfile.writec( "CASE INPUT 48", "$>PBARL    11      1               BAR" )
+jobfile.writec( "CASE INPUT 49", "$ Pset: ""12_RIG-V1_yp"" will be importe" // @
+"d as: ""pbarl.11""" )
+jobfile.writec( "CASE INPUT 50", "$>CBAR     117     11      106     202  " // @
+"   1.      0.      0." )
+jobfile.writec( "CASE INPUT 51", "$ Elements and Element Properties for re" // @
+"gion : 12_RIG-V1_yn" )
+jobfile.writec( "CASE INPUT 52", "$>PBARL    12      1               BAR" )
+jobfile.writec( "CASE INPUT 53", "$ Pset: ""12_RIG-V1_yn"" will be importe" // @
+"d as: ""pbarl.12""" )
+jobfile.writec( "CASE INPUT 54", "$>CBAR     113     12      130     215  " // @
+"   1.      0.      0." )
+jobfile.writec( "CASE INPUT 55", "$ Elements and Element Properties for re" // @
+"gion : 13_RIG-H1_xp" )
+jobfile.writec( "CASE INPUT 56", "$>PBARL    13      1               BAR" )
+jobfile.writec( "CASE INPUT 57", "$ Pset: ""13_RIG-H1_xp"" will be importe" // @
+"d as: ""pbarl.13""" )
+jobfile.writec( "CASE INPUT 58", "$>CBAR     125     13      133     134  " // @
+"   0.      0.      1." )
+jobfile.writec( "CASE INPUT 59", "$ Elements and Element Properties for re" // @
+"gion : 13_RIG-H1_xn" )
+jobfile.writec( "CASE INPUT 60", "$>PBARL    14      1               BAR" )
+jobfile.writec( "CASE INPUT 61", "$ Pset: ""13_RIG-H1_xn"" will be importe" // @
+"d as: ""pbarl.14""" )
+jobfile.writec( "CASE INPUT 62", "$>CBAR     121     14      142     141  " // @
+"   0.      0.      1." )
+jobfile.writec( "CASE INPUT 63", "$ Elements and Element Properties for re" // @
+"gion : 13_RIG-H1_yp" )
+jobfile.writec( "CASE INPUT 64", "$>PBARL    15      1               BAR" )
+jobfile.writec( "CASE INPUT 65", "$ Pset: ""13_RIG-H1_yp"" will be importe" // @
+"d as: ""pbarl.15""" )
+jobfile.writec( "CASE INPUT 66", "$>CBAR     136     15      109     111  " // @
+"   0.      0.      1." )
+jobfile.writec( "CASE INPUT 67", "$ Elements and Element Properties for re" // @
+"gion : 13_RIG-H1_yn" )
+jobfile.writec( "CASE INPUT 68", "$>PBARL    16      1               BAR" )
+jobfile.writec( "CASE INPUT 69", "$ Pset: ""13_RIG-H1_yn"" will be importe" // @
+"d as: ""pbarl.16""" )
+jobfile.writec( "CASE INPUT 70", "$>CBAR     101     16      141     143  " // @
+"   0.      0.      1." )
+jobfile.writec( "CASE INPUT 71", "$ Elements and Element Properties for re" // @
+"gion : 14_RIG-H3_xp" )
+jobfile.writec( "CASE INPUT 72", "$>PBARL    17      1               BAR" )
+jobfile.writec( "CASE INPUT 73", "$ Pset: ""14_RIG-H3_xp"" will be importe" // @
+"d as: ""pbarl.17""" )
+jobfile.writec( "CASE INPUT 74", "$>CBAR     220     17      213     218  " // @
+"   0.      0.      1." )
+jobfile.writec( "CASE INPUT 75", "$ Elements and Element Properties for re" // @
+"gion : 14_RIG-H3_xn" )
+jobfile.writec( "CASE INPUT 76", "$>PBARL    18      1               BAR" )
+jobfile.writec( "CASE INPUT 77", "$ Pset: ""14_RIG-H3_xn"" will be importe" // @
+"d as: ""pbarl.18""" )
+jobfile.writec( "CASE INPUT 78", "$>CBAR     216     18      223     219  " // @
+"   0.      0.      1." )
+jobfile.writec( "CASE INPUT 79", "$ Elements and Element Properties for re" // @
+"gion : 14_RIG-H3_yp" )
+jobfile.writec( "CASE INPUT 80", "$>PBARL    19      1               BAR" )
+jobfile.writec( "CASE INPUT 81", "$ Pset: ""14_RIG-H3_yp"" will be importe" // @
+"d as: ""pbarl.19""" )
+jobfile.writec( "CASE INPUT 82", "$>CBAR     234     19      200     201  " // @
+"   0.      0.      1." )
+jobfile.writec( "CASE INPUT 83", "$ Elements and Element Properties for re" // @
+"gion : 14_RIG-H3_yn" )
+jobfile.writec( "CASE INPUT 84", "$>PBARL    20      1               BAR" )
+jobfile.writec( "CASE INPUT 85", "$ Pset: ""14_RIG-H3_yn"" will be importe" // @
+"d as: ""pbarl.20""" )
+jobfile.writec( "CASE INPUT 86", "$>CBAR     226     20      215     214  " // @
+"   0.      0.      1." )
+jobfile.writec( "CASE INPUT 87", "$ Elements and Element Properties for re" // @
+"gion : 16_RIG-H5" )
+jobfile.writec( "CASE INPUT 88", "$>PBARL    21      1               BAR" )
+jobfile.writec( "CASE INPUT 89", "$ Pset: ""16_RIG-H5"" will be imported a" // @
+"s: ""pbarl.21""" )
+jobfile.writec( "CASE INPUT 90", "$>CBAR     144     21      125     126  " // @
+"   0.      0.      1." )
+jobfile.writec( "CASE INPUT 91", "$ Elements and Element Properties for re" // @
+"gion : 17_RIG-H6" )
+jobfile.writec( "CASE INPUT 92", "$>PBARL    22      1               BAR" )
+jobfile.writec( "CASE INPUT 93", "$ Pset: ""17_RIG-H6"" will be imported a" // @
+"s: ""pbarl.22""" )
+jobfile.writec( "CASE INPUT 94", "$>CBAR     504     22      469     470  " // @
+"   0.      0.      1." )
+jobfile.writec( "CASE INPUT 95", "$ Elements and Element Properties for re" // @
+"gion : 09_A_t-boards-PSU" )
+jobfile.writec( "CASE INPUT 96", "$>PSHELL   23      2       .0016   2    " // @
+"           2" )
+jobfile.writec( "CASE INPUT 97", "$ Pset: ""09_A_t-boards-PSU"" will be im" // @
+"ported as: ""pshell.23""" )
+jobfile.writec( "CASE INPUT 98", "$>CQUAD4   10000   23      1000    1001 " // @
+"   1004    1003" )
+jobfile.writec( "CASE INPUT 99", "$ Elements and Element Properties for re" // @
+"gion : 20_CBUSH" )
+jobfile.writec( "CASE INPUT 100", "$>PBUSH    24      K       1.+9    1.+9" // @
+"    1.+9    100.    1.+7    1.+7" )
+jobfile.writec( "CASE INPUT 101", "$ Pset: ""20_CBUSH"" will be imported a" // @
+"s: ""pbush.24""" )
+jobfile.writec( "CASE INPUT 102", "$>CBUSH    1       24      1       10  " // @
+"                            1" )
+jobfile.writec( "CASE INPUT 103", "$ Elements and Element Properties for r" // @
+"egion : 09_B_t-boards-MOD" )
+jobfile.writec( "CASE INPUT 104", "$>PSHELL   25      3       .0016   3   " // @
+"            3" )
+jobfile.writec( "CASE INPUT 105", "$ Pset: ""09_B_t-boards-MOD"" will be i" // @
+"mported as: ""pshell.25""" )
+jobfile.writec( "CASE INPUT 106", "$>CQUAD4   20000   25      2000    2001" // @
+"    2004    2003" )
+jobfile.writec( "CASE INPUT 107", "$ Elements and Element Properties for r" // @
+"egion : 09_C_t-boards-PROC" )
+jobfile.writec( "CASE INPUT 108", "$>PSHELL   26      4       .0016   4   " // @
+"            4" )
+jobfile.writec( "CASE INPUT 109", "$ Pset: ""09_C_t-boards-PROC"" will be " // @
+"imported as: ""pshell.26""" )
+jobfile.writec( "CASE INPUT 110", "$>CQUAD4   40000   26      4000    4001" // @
+"    4004    4003" )
+jobfile.writec( "CASE INPUT 111", "$ Elements and Element Properties for r" // @
+"egion : 09_D_t-boards-FPGA" )
+jobfile.writec( "CASE INPUT 112", "$>PSHELL   27      5       .0016   5   " // @
+"            5" )
+jobfile.writec( "CASE INPUT 113", "$ Pset: ""09_D_t-boards-FPGA"" will be " // @
+"imported as: ""pshell.27""" )
+jobfile.writec( "CASE INPUT 114", "$>CQUAD4   30000   27      3000    3001" // @
+"    3004    3003" )
+jobfile.writec( "CASE INPUT 115", "$ Elements and Element Properties for r" // @
+"egion : 21_CBUSH_CONTACT" )
+jobfile.writec( "CASE INPUT 116", "$>PBUSH    28      K       1.+9    1.+9" // @
+"    1.+9    0.     1000000.1000000." )
+jobfile.writec( "CASE INPUT 117", "$ Pset: ""21_CBUSH_CONTACT"" will be im" // @
+"ported as: ""pbush.28""" )
+jobfile.writec( "CASE INPUT 118", "$>CBUSH    100000  28      141     1044" // @
+"                            1" )
+jobfile.writec( "CASE INPUT 119", "$ Elements and Element Properties for r" // @
+"egion : 07_t-bandejas_FPGA" )
+jobfile.writec( "CASE INPUT 120", "$>PSHELL*  29              6           " // @
+"    6.9999998-4     6" )
+jobfile.writec( "CASE INPUT 121", "$ Pset: ""07_t-bandejas_FPGA"" will be " // @
+"imported as: ""pshell.29""" )
+jobfile.writec( "CASE INPUT 122", "$>CQUAD4   3000    29      324     325 " // @
+"    327     326" )
+jobfile.writec( "CASE INPUT 123", "$ Referenced Material Records" )
+jobfile.writec( "CASE INPUT 124", "$ Material Record : Al_7075-T7351" )
+jobfile.writec( "CASE INPUT 125", "$ Description of Material : Date: 18-Oc" // @
+"t-22           Time: 10:40:20" )
+jobfile.writec( "CASE INPUT 126", "$>MAT1*    1               7.0999998+10" // @
+"                    .33" )
+jobfile.writec( "CASE INPUT 127", "$ Material Record : PCB_PSU" )
+jobfile.writec( "CASE INPUT 128", "$ Description of Material : Date: 18-Oc" // @
+"t-22           Time: 10:40:20" )
+jobfile.writec( "CASE INPUT 129", "$>MAT1*    2               8.+10       " // @
+"                    .33" )
+jobfile.writec( "CASE INPUT 130", "$ Material Record : PCB_MOD" )
+jobfile.writec( "CASE INPUT 131", "$ Description of Material : Date: 18-Oc" // @
+"t-22           Time: 10:40:20" )
+jobfile.writec( "CASE INPUT 132", "$>MAT1*    3               8.+10       " // @
+"                    .33" )
+jobfile.writec( "CASE INPUT 133", "$ Material Record : PCB_PROC" )
+jobfile.writec( "CASE INPUT 134", "$ Description of Material : Date: 18-Oc" // @
+"t-22           Time: 10:40:20" )
+jobfile.writec( "CASE INPUT 135", "$>MAT1*    4               8.+10       " // @
+"                    .33" )
+jobfile.writec( "CASE INPUT 136", "$ Material Record : PCB_FPGA" )
+jobfile.writec( "CASE INPUT 137", "$ Description of Material : Date: 18-Oc" // @
+"t-22           Time: 10:40:20" )
+jobfile.writec( "CASE INPUT 138", "$>MAT1*    5               4.+10       " // @
+"                    .33" )
+jobfile.writec( "CASE INPUT 139", "$ Material Record : Bandeja_FPGA" )
+jobfile.writec( "CASE INPUT 140", "$ Description of Material : Date: 18-Oc" // @
+"t-22           Time: 10:40:20" )
+jobfile.writec( "CASE INPUT 141", "$>MAT1*    6               7.0999998+10" // @
+"                    .33" )
+jobfile.writec( "CASE INPUT 142", "$ Multipoint Constraints of the Entire " // @
+"Model" )
+jobfile.writec( "CASE INPUT 143", "$ ID conflict : the PATRAN MPC ID was 1" )
+jobfile.writec( "CASE INPUT 144", "$>RBE2     400027  17      123456  109 " // @
+"    111     200     201" )
+jobfile.writec( "CASE INPUT 145", "$ ID conflict : the PATRAN MPC ID was 2" )
+jobfile.writec( "CASE INPUT 146", "$>RBE2     400028  15      123456  106 " // @
+"    107     202     203" )
+jobfile.writec( "CASE INPUT 147", "$ ID conflict : the PATRAN MPC ID was 3" )
+jobfile.writec( "CASE INPUT 148", "$>RBE2     400029  13      123456  119 " // @
+"    120     209     210" )
+jobfile.writec( "CASE INPUT 149", "$ ID conflict : the PATRAN MPC ID was 4" )
+jobfile.writec( "CASE INPUT 150", "$>RBE2     400030  11      123456  121 " // @
+"    123     207     208" )
+jobfile.writec( "CASE INPUT 151", "$ ID conflict : the PATRAN MPC ID was 5" )
+jobfile.writec( "CASE INPUT 152", "$>RBE2     400031  10      123456  141 " // @
+"    143     219     220" )
+jobfile.writec( "CASE INPUT 153", "$ ID conflict : the PATRAN MPC ID was 6" )
+jobfile.writec( "CASE INPUT 154", "$>RBE2     400032  12      123456  139 " // @
+"    140     221     222" )
+jobfile.writec( "CASE INPUT 155", "$ ID conflict : the PATRAN MPC ID was 7" )
+jobfile.writec( "CASE INPUT 156", "$>RBE2     400033  14      123456  130 " // @
+"    131     215     216" )
+jobfile.writec( "CASE INPUT 157", "$ ID conflict : the PATRAN MPC ID was 8" )
+jobfile.writec( "CASE INPUT 158", "$>RBE2     400034  16      123456  133 " // @
+"    135     213     214" )
+jobfile.writec( "CASE INPUT 159", "$ Nodes of the Entire Model" )
+jobfile.writec( "CASE INPUT 160", "$>GRID*    1                           " // @
+"    -.1017500013113-.09324999898672" )
+jobfile.writec( "CASE INPUT 161", "$ Loads for Load Case : 01_FIX_bolts" )
+jobfile.writec( "CASE INPUT 162", "$ Displacement Constraints of Load Set " // @
+": FIX_123456" )
+jobfile.writec( "CASE INPUT 163", "$>SPC1     1       123456  1       THRU" // @
+"    8" )
+jobfile.writec( "CASE INPUT 164", "$ Referenced Coordinate Frames" )
+jobfile.writec( "CASE INPUT 165", "$>CORD2R   1               0.      0.  " // @
+"    0.      -1.     0.      0." )
+jobfile.writec( "BULK WRITE", "OFF" )
+jobfile.writei( "BULK INPUT 0", 0 )
+jobfile.writec( "CELL DTI POSITION", "START" )
+jobfile.writec( "FMS DTI POSITION", "START" )
+jobfile.writec( "EXEC DTI POSITION", "START" )
+jobfile.writec( "CASE DTI POSITION", "START" )
+jobfile.writec( "BULK DTI POSITION", "START" )
+jobfile.writec( "", "END" )
+jobfile.close(  )
+mscnastran_job.associate_subcases( "103", "SFEM_EUE", 1, ["Default"] )
+analysis_submit_2( "MSC.Nastran", "SFEM_EUE" )
+$# Patran 2025.2  (Student Edition) has obtained 0 concurrent license(s) from 
+$# FLEXlm per a request to execute on Windows node DESKTOP-0MNNQU5(
+$# 68ecc5ad7ef6) (Windows 6.2 (Build 9200: Service Pack 0)) at 20-Apr-26 
+$# 12:17:00.
+$# 
+$# Reading model information from the specified database, C:\Users\Pablo\ 
+$# Castillo\Desktop\MUSE\SEGUNDO\ CUATRIMESTRE\ESTRUCTURAS\TRABAJO\ HECHO\ A\ 
+$# MANO\Trabajo_EUE_25-26\05_FEM\Modos_propios.db.
+$# Messages output from the Patran 2025.2  (Student Edition) input deck 
+$# translator on April     20, 2026 at 12:17:00.
+$# 
+$# The NASTRAN input file, SFEM_EUE.bdf, has been successfully opened.
+$# 
+$# Translating 4 elements from the element property region 11_ESQ_xp_yp.
+$# 
+$# Translating 4 elements from the element property region 11_ESQ_xn_yp.
+$# 
+$# Translating 4 elements from the element property region 11_ESQ_xn_yn.
+$# 
+$# Translating 4 elements from the element property region 11_ESQ_xp_yn.
+$# 
+$# Translating 13 elements from the element property region 12_RIG-V1_xp.
+$# 
+$# Translating 13 elements from the element property region 12_RIG-V1_xn.
+$# 
+$# Translating 13 elements from the element property region 12_RIG-V1_yp.
+$# 
+$# Translating 13 elements from the element property region 12_RIG-V1_yn.
+$# 
+$# Translating 4 elements from the element property region 13_RIG-H1_xp.
+$# 
+$# Translating 4 elements from the element property region 13_RIG-H1_xn.
+$# 
+$# Translating 8 elements from the element property region 13_RIG-H1_yp.
+$# 
+$# Translating 8 elements from the element property region 13_RIG-H1_yn.
+$# 
+$# Translating 24 elements from the element property region 14_RIG-H3_xp.
+$# 
+$# Translating 20 elements from the element property region 14_RIG-H3_xn.
+$# 
+$# Translating 36 elements from the element property region 14_RIG-H3_yp.
+$# 
+$# Translating 32 elements from the element property region 14_RIG-H3_yn.
+$# 
+$# Translating 126 elements from the element property region 16_RIG-H5.
+$# 
+$# Translating 122 elements from the element property region 17_RIG-H6.
+$# 
+$# Translating 8 elements from the element property region 20_CBUSH.
+$# 
+$# Translating 108 elements from the element property region 21_CBUSH_CONTACT.
+$# 
+$# Translating 88 elements from the element property region 01_t-wall-delgadas.
+$# 
+$# Translating 64 elements from the element property region 05_t-tapa.
+$# 
+$# Translating 8 elements from the element property region 06_t-rig-base.
+$# 
+$# Translating 96 elements from the element property region 07_t-bandejas.
+$# 
+$# Translating 32 elements from the element property region 09_A_t-boards-PSU.
+$# 
+$# Translating 32 elements from the element property region 09_B_t-boards-MOD.
+$# 
+$# Translating 32 elements from the element property region 09_C_t-boards-PROC.
+$# 
+$# Translating 32 elements from the element property region 09_D_t-boards-FPGA.
+$# 
+$# Translating 32 elements from the element property region 07_t-bandejas_FPGA.
+$# 
+$# 29 property regions translated.
+$# 
+$# Translating 6 referenced material records.
+$# 
+$# Translating 8 multipoint constraints from the entire model.
+$# 
+$# Translating 457 nodes from the entire model.
+$# 
+$# Writing loads for Load Case : Default.
+$# 
+$# Translating nodal constraints in load set : FIX_123456.
+$# Writing interface element lbcs.
+$# 
+$# Translating 1 referenced coordinate frames.
+$# Total execution time in real seconds: 0.01
+$# Total execution time in CPU seconds: 0.233997
+$# 
+$# End of NASTRAN input file translation.
+$# Student Edition Patran Nastran Preference Patran 2025.2  (Student Edition) 
+$# has released 0 license(s) to FLEXlm at 20-Apr-26 12:17:00.
+$# The translation has completed successfully.
+$# Executing /bin/sh -c C:\Program 
+$# Files\MSC.Software\NaPa_SE\20252\Patran\bin\MscN
+$# astranExecute.exe -j SFEM_EUE -m bdf -x 20252 -c 
+$# %%prog=edu%auth=edu%arch=64% -v
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "C:\Users\Pablo Castillo\Desktop\MUSE\SEGUN" // @
+"DO CUATRIMESTRE\ESTRUCTURAS\TRABAJO HECHO A MANO\Trabajo_EUE_25-26\05_FEM" // @
+"\Modos_propios.db" )
+msc_dra_add_param( "JOBNAME", "SFEM_EUE" )
+msc_dra_add_param( "RESULTS FILE", "C:\Users\Pablo Castillo\Desktop\MUSE\S" // @
+"EGUNDO CUATRIMESTRE\ESTRUCTURAS\TRABAJO HECHO A MANO\Trabajo_EUE_25-26\05" // @
+"_FEM\sfem_eue.h5" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "0.0049999999" )
+msc_dra_add_param( "OBJECTIVE FUNCTION", "ON" )
+msc_dra_add_param( "DESIGN CONSTRAINTS", "ON" )
+msc_dra_add_param( "DESIGN VARIABLES", "ON" )
+msc_dra_add_param( "COMBINE RESULTCASES", "ON" )
+msc_dra_add_param( "COMBINE MODULES", "OFF" )
+msc_dra_add_param( "SPLINE IMPORT DATA", "OFF" )
+msc_dra_add_param( "SPLINE POST DATA", "ZERO" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "ON" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "CREATE P-ORDER FIELD", "" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Both        " )
+msc_dra_add_param( "NASTRAN VERSION", "" )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "SFEM_EUE", "Attach HDF5 Results File",  @
+"C:\Users\Pablo Castillo\Desktop\MUSE\SEGUNDO CUATRIMESTRE\ESTRUCTURAS\TRA" // @
+"BAJO HECHO A MANO\Trabajo_EUE_25-26\05_FEM\sfem_eue.h5", TRUE )
+$# Attaching Direct Results Access file: "C:\Users\Pablo 
+$# Castillo\Desktop\MUSE\SEGUNDO CUATRIMESTRE\ESTRUCTURAS\TRABAJO HECHO A 
+$# MANO\Trabajo_EUE_25-26\05_FEM\sfem_eue.h5"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Mode 1: Freq.=206.201
+$# Processing result sub-case: Mode 2: Freq.=248.231
+$# Processing result sub-case: Mode 3: Freq.=256.041
+$# Processing result sub-case: Mode 4: Freq.=269.805
+$# Processing result sub-case: Mode 5: Freq.=285.908
+$# Processing result sub-case: Mode 6: Freq.=352.586
+$# Processing result sub-case: Mode 7: Freq.=429.782
+$# Processing result sub-case: Mode 8: Freq.=443.012
+$# Processing result sub-case: Mode 9: Freq.=447.65
+$# Processing result sub-case: Mode 10: Freq.=466.83
+$# Processing result sub-case: Mode 11: Freq.=492.308
+$# Processing result sub-case: Mode 12: Freq.=558.482
+$# Processing result sub-case: Mode 13: Freq.=581.194
+$# Processing result sub-case: Mode 14: Freq.=592.307
+$# Processing result sub-case: Mode 15: Freq.=593.355
+$# Processing result sub-case: Mode 16: Freq.=593.945
+$# Processing result sub-case: Mode 17: Freq.=606.321
+$# Processing result sub-case: Mode 18: Freq.=632.296
+$# Processing result sub-case: Mode 19: Freq.=634.364
+$# Processing result sub-case: Mode 20: Freq.=638.337
+$# Processing result sub-case: Mode 21: Freq.=642.041
+$# Processing result sub-case: Mode 22: Freq.=647.245
+$# Processing result sub-case: Mode 23: Freq.=648.55
+$# Processing result sub-case: Mode 24: Freq.=666.224
+$# Processing result sub-case: Mode 25: Freq.=682.161
+$# Processing result sub-case: Mode 26: Freq.=700.57
+$# Processing result sub-case: Mode 27: Freq.=715.699
+$# Processing result sub-case: Mode 28: Freq.=765.502
+$# Processing result sub-case: Mode 29: Freq.=780.335
+$# Processing result sub-case: Mode 30: Freq.=784.944
+$# Processing result sub-case: Mode 31: Freq.=793.329
+$# Processing result sub-case: Mode 32: Freq.=806.837
+$# Processing result sub-case: Mode 33: Freq.=819.341
+$# Processing result sub-case: Mode 34: Freq.=836.074
+$# Processing result sub-case: Mode 35: Freq.=836.843
+$# Processing result sub-case: Mode 36: Freq.=838.833
+$# Processing result sub-case: Mode 37: Freq.=840.47
+$# Processing result sub-case: Mode 38: Freq.=892.937
+$# Processing result sub-case: Mode 39: Freq.=896.06
+$# Processing result sub-case: Mode 40: Freq.=905.988
+$# Processing result sub-case: Mode 41: Freq.=913.772
+$# Processing result sub-case: Mode 42: Freq.=930.177
+$# Processing result sub-case: Mode 43: Freq.=933.455
+$# Processing result sub-case: Mode 44: Freq.=940.099
+$# Processing result sub-case: Mode 45: Freq.=971.668
+$# Processing result sub-case: Mode 46: Freq.=985.597
+$# Processing result sub-case: Mode 47: Freq.=1001.21
+$# Processing result sub-case: Mode 48: Freq.=1024.23
+$# Processing result sub-case: Mode 49: Freq.=1042.79
+$# Processing result sub-case: Mode 50: Freq.=1053.2
+$# Processing result sub-case: Mode 51: Freq.=1053.48
+$# Processing result sub-case: Mode 52: Freq.=1053.79
+$# Processing result sub-case: Mode 53: Freq.=1061.75
+$# Processing result sub-case: Mode 54: Freq.=1063.79
+$# Processing result sub-case: Mode 55: Freq.=1066.16
+$# Processing result sub-case: Mode 56: Freq.=1070.08
+$# Processing result sub-case: Mode 57: Freq.=1075.01
+$# Processing result sub-case: Mode 58: Freq.=1085.05
+$# Processing result sub-case: Mode 59: Freq.=1089.51
+$# Processing result sub-case: Mode 60: Freq.=1131.57
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.047
+$# *** End:   Attach Result File ***
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 2: Freq.=248.231", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 2: Freq.=248.231", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"SC1:DEFAULT, A1:Mode 2: Freq.=248.231: Eigenvectors, Translational-(NON-L" // @
+"AYERED)"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_display_tool_unpost( "Deformation", "default_Deformation" )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 3: Freq.=256.041", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_display_tool_unpost( "Deformation", "default_Deformation" )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 4: Freq.=269.805", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 4: Freq.=269.805", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 4: Freq.=269.805", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -74.300056, -0.230496, 178.358795 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 2: Freq.=248.231", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 2: Freq.=248.231", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 3: Freq.=256.041", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 3: Freq.=256.041", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 4: Freq.=269.805", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 4: Freq.=269.805", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 5: Freq.=285.908", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 5: Freq.=285.908", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+material.rename( "PCB_PROC", "PCB_PROC" )
+material.create3( "Analysis code ID", 1, "Analysis type ID", 1, "PCB_PROC", 4, @
+ "", "Isotropic", 1, "Directionality", 1, "Linearity", 1, "Homogeneous", 0,  @
+"Linear Elastic", 1, "Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, @
+ 0], "Active Flag", 1, "Modify", 31, "External Flag", FALSE, "Property IDs", [ @
+"Elastic Modulus", ""], [2, 0], "Property Values", ["7.4000001E+10", ""],  @
+"#FFA2B216" )
+$#  Beginning analysis of  SFEM_EUE
+jobfile.open( "SFEM_EUE", "ANALYZE NO JOBFILE" )
+$# Question from application APP INTERFACES
+$#     The jobname (SFEM_EUE) is already defined in the database. Do you wish 
+$# to overwrite?
+$? YES 6016027 
+msc_delete_old_files( "SFEM_EUE", ".bdf", ".h5" )
+$# Question from application APP INTERFACES
+$#     Files from a previous analysis conflict with the current job name: 
+$# "SFEM_EUE".  These files are SFEM_EUE.f04, SFEM_EUE.f06, SFEM_EUE.log, 
+$# SFEM_EUE.h5, SFEM_EUE.bdf.  Will you permit deletion of these files?
+$? YES 6022037 
+$# Warning reported from application APP INTERFACES
+$#     The attachment to the file C:\Users\Pablo 
+$# Castillo\Desktop\MUSE\SEGUNDO CUATRIMESTRE\ESTRUCTURAS\TRABAJO HECHO A 
+$# MANO\Trabajo_EUE_25-26\05_FEM\sfem_eue.h5 has been deleted because that 
+$# file is being deleted.
+jobfile.write_spl( "/* Jobfile for PATNAS created %A% at %A% */", ["20-Apr-26" @
+, "12:20:44"] )
+jobfile.writec( "", "TRANSLATOR = pat3nas" )
+jobfile.writec( "DATABASE", "C:\Users\Pablo Castillo\Desktop\MUSE\SEGUNDO " // @
+"CUATRIMESTRE\ESTRUCTURAS\TRABAJO HECHO A MANO\Trabajo_EUE_25-26\05_FEM\Mo" // @
+"dos_propios.db" )
+jobfile.writec( "JOBNAME", "SFEM_EUE" )
+jobfile.writec( "ANALYSIS TITLE", "" )
+jobfile.writec( "ANALYSIS SUBTITLE", "" )
+jobfile.writec( "ANALYSIS LABEL", "" )
+jobfile.writec( "", "" )
+jobfile.writec( "OBJECT", "Entire Model" )
+jobfile.writec( "METHOD", "Full Run" )
+jobfile.writec( "", "" )
+jobfile.writec( "MODEL SUFFIX", ".bdf" )
+jobfile.writec( "RESULTS SUFFIX", ".h5" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * File Search Path Declaration" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\mscexplore_files\" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\bin\exe" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\bin" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\icons\RibbonIcons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\icons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\alters" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\helpfiles" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\shareware\msc\unsupported\utilities\extra_files" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\shareware\msc\unsupported\utilities\plb" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\shareware\msc\unsupported\utilities\icons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\mscprocor_files\icons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\mscprocor_files\lib" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\mscprocor_files\plb" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20252\Patran\mscprocor_files\dmap" )
+jobfile.writec( "File Search Path", "C:\Users\Pablo Castillo" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Translation Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "DATA OUTPUT", "HDF5C+PRINT" )
+jobfile.writec( "OUTPUT2 REQUESTS", "P3 Built In" )
+jobfile.writec( "OUTPUT2 FORMAT", "Binary" )
+jobfile.writec( "HDF5OUT PRECISION", "HDF5P 32-BIT" )
+jobfile.writec( "DIVISION TOLERANCE", "1.0e-08" )
+jobfile.writec( "NUMERICAL TOLERANCE", "1.0e-04" )
+jobfile.writec( "WRITING TOLERANCE", "1.0e-21" )
+jobfile.writec( "GEOM CHECK", "INFORM" )
+jobfile.writec( "SORTED BULK", "NO" )
+jobfile.writec( "CARD FORMAT", "either" )
+jobfile.writec( "NODE COORDINATES", "reference frame" )
+jobfile.writec( "COORD COORDINATES", "global" )
+jobfile.writec( "MSC.Nastran VERSION", "2025.2" )
+jobfile.writec( "WRITE STORED PRECISION", "TRUE" )
+jobfile.writec( "WRITE IN FREE FORMAT", "FALSE" )
+jobfile.writec( "PROPS ON ELEM ENTRY", "FALSE" )
+jobfile.writec( "CONTINUATION ENTRY", "FALSE" )
+jobfile.writec( "PCOMPG ENTRY", "TRUE" )
+jobfile.writec( "CONVERT CBAR CBEAM", "FALSE" )
+jobfile.writec( "ITERATIVE SOLVER", "FALSE" )
+jobfile.writei( "SUPER ELEMENT 0", 0 )
+jobfile.writec( "MODEL TOLERANCE", "0.0049999999" )
+jobfile.writec( "ELEMENT PROPERTY OFFSET", "0" )
+jobfile.writec( "MATERIAL PROPERTY OFFSET", "0" )
+jobfile.writec( "TABLE OFFSET", "0" )
+jobfile.writec( "LOAD SET OFFSET", "0" )
+jobfile.writec( "LOAD CASE OFFSET", "0" )
+jobfile.writec( "CONTROL SET OFFSET", "0" )
+jobfile.writec( "RIGID ELEMENT OFFSET", "0" )
+jobfile.writec( "SCALAR POINT OFFSET", "0" )
+jobfile.writec( "BEGINNING CONTINUATION MARKER", "+      A" )
+jobfile.writec( "NUMBER ONLY", "ON" )
+jobfile.writec( "BEGINNING NUMBER", "OFF" )
+jobfile.writec( "TRAILING NUMBER", "OFF" )
+jobfile.writec( "SYNTAX NUMBER", "ON" )
+jobfile.writec( "SYNTAX MARKER", "." )
+jobfile.writec( "EXTERNAL SUPERELEMENT METHOD", "NONE" )
+jobfile.writec( "USE LEGACY PRECISION", "FALSE" )
+jobfile.writec( "EXPONENTIAL WRITE", "As Needed" )
+jobfile.writec( "EXPONENTIAL FORM", "Condensed" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Solution Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "SOLUTION TYPE", "NORMAL MODES" )
+jobfile.writei( "SOLUTION SEQUENCE", 103 )
+jobfile.writec( "DATABASE RUN", "ON" )
+jobfile.writec( "INTERACTIVE MODES", "OFF" )
+jobfile.writec( "CYCLIC SYMMETRY", "OFF" )
+jobfile.writec( "AUTOMATIC CONSTRAINTS", "ON" )
+jobfile.writec( "SHELL NORMAL TOLERANCE", "" )
+jobfile.writec( "MASS CALCULATION", "Lumped" )
+jobfile.writec( "DATA DECK ECHO", "None" )
+jobfile.writec( "PLATE RZ STIFFNESS FACTOR", "100.0" )
+jobfile.writec( "MAXIMUM PRINTED LINES", "" )
+jobfile.writec( "MAXIMUM RUN TIME", "" )
+jobfile.writec( "WT-MASS CONVERSION", "1.0" )
+jobfile.writec( "NODE ID FOR WT-GENER", "" )
+jobfile.writec( "RIGID ELEMENT TYPE", "LINEAR" )
+jobfile.writec( "USE SOL600", "OFF" )
+jobfile.writec( "CONTACT-AUTO-CONTACT-GENERATION", "OFF" )
+jobfile.writei( "CONTACT-SEGMENT-CONTROL METHOD", 0 )
+jobfile.writei( "CONTACT-DEFORMABLE-DEFORMABLE METHOD", 0 )
+jobfile.writei( "CONTACT-LINCNT METHOD", 0 )
+jobfile.writec( "RESIDUAL VECTOR", "Nastran Default" )
+jobfile.writec( "NEF STRESS UNITS", "MPA" )
+jobfile.writec( "NEF STRESS COMBINATION", "ABSMAXPR" )
+jobfile.writec( "NEF RESULT LOCATION", "NODA" )
+jobfile.writec( "NEF RECOVERY LOCATION", "CORNER" )
+jobfile.writec( "NEF LAYER LOCATION", "WORST" )
+jobfile.writec( "NEF INTERPOLATION LIMIT", "0" )
+jobfile.writec( "NEF LEVEL OF MESSAGE", "0" )
+jobfile.writec( "NEF NUMBER OF THREADS", "1" )
+jobfile.writer( "NEF CERTAINTY OF SURVIVAL", 50. )
+jobfile.writer( "NEF OVERALL SCALE FACTOR", 1. )
+jobfile.writer( "NEF TOP STRESS PERCENTAGE FILTER", 100. )
+jobfile.writer( "NEF TOP DAMAGE PERCENTAGE FILTER", 100. )
+jobfile.writec( "NEF TIME HISTORY DIRECTORY", "./" )
+jobfile.writei( "NEF MAX LOAD PER EVENT", 1 )
+jobfile.writec( "NEF EVENT DATA", "0" )
+jobfile.writec( "NEF LOAD SEQUENCE DATA", "0" )
+jobfile.writec( "USE CONTACT TABLE", "OFF" )
+jobfile.writec( "INITIAL CONTACTPAIR LOADCASE NAME", "" )
+jobfile.writei( "MDOF DATA", 0 )
+jobfile.writec( "CELL WRITE", "ON" )
+jobfile.writei( "CELL INPUT 0", 0 )
+jobfile.writec( "FMS WRITE", "OFF" )
+jobfile.writei( "FMS INPUT 0", 0 )
+jobfile.writec( "EXEC WRITE", "OFF" )
+jobfile.writei( "EXEC INPUT 0", 0 )
+jobfile.writec( "CASE WRITE", "OFF" )
+jobfile.writei( "CASE INPUT 0", 165 )
+jobfile.writec( "CASE INPUT 1", "$ MSC.Nastran input file created on March" // @
+"     22, 2023 at 09:54:42 by" )
+jobfile.writec( "CASE INPUT 2", "$ Patran 2021.4" )
+jobfile.writec( "CASE INPUT 3", "$" )
+jobfile.writec( "CASE INPUT 4", "$ Using Nastran default values for RESVEC" )
+jobfile.writec( "CASE INPUT 5", "$ Direct Text Input for this Subcase" )
+jobfile.writec( "CASE INPUT 6", "$ Direct Text Input for Bulk Data" )
+jobfile.writec( "CASE INPUT 7", "$ Elements and Element Properties for reg" // @
+"ion : 01_t-wall-delgadas" )
+jobfile.writec( "CASE INPUT 8", "$>PSHELL*  1               1             " // @
+"  6.9999998-4     1" )
+jobfile.writec( "CASE INPUT 9", "$ Pset: ""01_t-wall-delgadas"" will be im" // @
+"ported as: ""pshell.1""" )
+jobfile.writec( "CASE INPUT 10", "$>CQUAD4   1009    1       111     201  " // @
+"   202     106" )
+jobfile.writec( "CASE INPUT 11", "$ Elements and Element Properties for re" // @
+"gion : 05_t-tapa" )
+jobfile.writec( "CASE INPUT 12", "$>PSHELL*  2               1            " // @
+"   5.0000002-4     1" )
+jobfile.writec( "CASE INPUT 13", "$ Pset: ""05_t-tapa"" will be imported a" // @
+"s: ""pshell.2""" )
+jobfile.writec( "CASE INPUT 14", "$>CQUAD4   4056    2       445     469  " // @
+"   470     446" )
+jobfile.writec( "CASE INPUT 15", "$ Elements and Element Properties for re" // @
+"gion : 06_t-rig-base" )
+jobfile.writec( "CASE INPUT 16", "$>PSHELL   3       1       .005    1    " // @
+"           1" )
+jobfile.writec( "CASE INPUT 17", "$ Pset: ""06_t-rig-base"" will be import" // @
+"ed as: ""pshell.3""" )
+jobfile.writec( "CASE INPUT 18", "$>CQUAD4   1008    3       109     200  " // @
+"   201     111" )
+jobfile.writec( "CASE INPUT 19", "$ Elements and Element Properties for re" // @
+"gion : 07_t-bandejas" )
+jobfile.writec( "CASE INPUT 20", "$>PSHELL*  4               1            " // @
+"   6.9999998-4     1" )
+jobfile.writec( "CASE INPUT 21", "$ Pset: ""07_t-bandejas"" will be import" // @
+"ed as: ""pshell.4""" )
+jobfile.writec( "CASE INPUT 22", "$>CQUAD4   1000    4       100     101  " // @
+"   103     102" )
+jobfile.writec( "CASE INPUT 23", "$ Elements and Element Properties for re" // @
+"gion : 11_ESQ_xp_yp" )
+jobfile.writec( "CASE INPUT 24", "$>PBARL    5       1               BAR" )
+jobfile.writec( "CASE INPUT 25", "$ Pset: ""11_ESQ_xp_yp"" will be importe" // @
+"d as: ""pbarl.5""" )
+jobfile.writec( "CASE INPUT 26", "$>CBAR     104     5       109     200  " // @
+"   1.      0.      0." )
+jobfile.writec( "CASE INPUT 27", "$ Elements and Element Properties for re" // @
+"gion : 11_ESQ_xn_yp" )
+jobfile.writec( "CASE INPUT 28", "$>PBARL    6       1               BAR" )
+jobfile.writec( "CASE INPUT 29", "$ Pset: ""11_ESQ_xn_yp"" will be importe" // @
+"d as: ""pbarl.6""" )
+jobfile.writec( "CASE INPUT 30", "$>CBAR     102     6       207     121  " // @
+"   1.      0.      0." )
+jobfile.writec( "CASE INPUT 31", "$ Elements and Element Properties for re" // @
+"gion : 11_ESQ_xn_yn" )
+jobfile.writec( "CASE INPUT 32", "$>PBARL    7       1               BAR" )
+jobfile.writec( "CASE INPUT 33", "$ Pset: ""11_ESQ_xn_yn"" will be importe" // @
+"d as: ""pbarl.7""" )
+jobfile.writec( "CASE INPUT 34", "$>CBAR     100     7       141     219  " // @
+"   1.      0.      0." )
+jobfile.writec( "CASE INPUT 35", "$ Elements and Element Properties for re" // @
+"gion : 11_ESQ_xp_yn" )
+jobfile.writec( "CASE INPUT 36", "$>PBARL    8       1               BAR" )
+jobfile.writec( "CASE INPUT 37", "$ Pset: ""11_ESQ_xp_yn"" will be importe" // @
+"d as: ""pbarl.8""" )
+jobfile.writec( "CASE INPUT 38", "$>CBAR     103     8       213     133  " // @
+"   1.      0.      0." )
+jobfile.writec( "CASE INPUT 39", "$ Elements and Element Properties for re" // @
+"gion : 12_RIG-V1_xp" )
+jobfile.writec( "CASE INPUT 40", "$>PBARL    9       1               BAR" )
+jobfile.writec( "CASE INPUT 41", "$ Pset: ""12_RIG-V1_xp"" will be importe" // @
+"d as: ""pbarl.9""" )
+jobfile.writec( "CASE INPUT 42", "$>CBAR     109     9       110     205  " // @
+"   1.      0.      0." )
+jobfile.writec( "CASE INPUT 43", "$ Elements and Element Properties for re" // @
+"gion : 12_RIG-V1_xn" )
+jobfile.writec( "CASE INPUT 44", "$>PBARL    10      1               BAR" )
+jobfile.writec( "CASE INPUT 45", "$ Pset: ""12_RIG-V1_xn"" will be importe" // @
+"d as: ""pbarl.10""" )
+jobfile.writec( "CASE INPUT 46", "$>CBAR     105     10      142     223  " // @
+"   1.      0.      0." )
+jobfile.writec( "CASE INPUT 47", "$ Elements and Element Properties for re" // @
+"gion : 12_RIG-V1_yp" )
+jobfile.writec( "CASE INPUT 48", "$>PBARL    11      1               BAR" )
+jobfile.writec( "CASE INPUT 49", "$ Pset: ""12_RIG-V1_yp"" will be importe" // @
+"d as: ""pbarl.11""" )
+jobfile.writec( "CASE INPUT 50", "$>CBAR     117     11      106     202  " // @
+"   1.      0.      0." )
+jobfile.writec( "CASE INPUT 51", "$ Elements and Element Properties for re" // @
+"gion : 12_RIG-V1_yn" )
+jobfile.writec( "CASE INPUT 52", "$>PBARL    12      1               BAR" )
+jobfile.writec( "CASE INPUT 53", "$ Pset: ""12_RIG-V1_yn"" will be importe" // @
+"d as: ""pbarl.12""" )
+jobfile.writec( "CASE INPUT 54", "$>CBAR     113     12      130     215  " // @
+"   1.      0.      0." )
+jobfile.writec( "CASE INPUT 55", "$ Elements and Element Properties for re" // @
+"gion : 13_RIG-H1_xp" )
+jobfile.writec( "CASE INPUT 56", "$>PBARL    13      1               BAR" )
+jobfile.writec( "CASE INPUT 57", "$ Pset: ""13_RIG-H1_xp"" will be importe" // @
+"d as: ""pbarl.13""" )
+jobfile.writec( "CASE INPUT 58", "$>CBAR     125     13      133     134  " // @
+"   0.      0.      1." )
+jobfile.writec( "CASE INPUT 59", "$ Elements and Element Properties for re" // @
+"gion : 13_RIG-H1_xn" )
+jobfile.writec( "CASE INPUT 60", "$>PBARL    14      1               BAR" )
+jobfile.writec( "CASE INPUT 61", "$ Pset: ""13_RIG-H1_xn"" will be importe" // @
+"d as: ""pbarl.14""" )
+jobfile.writec( "CASE INPUT 62", "$>CBAR     121     14      142     141  " // @
+"   0.      0.      1." )
+jobfile.writec( "CASE INPUT 63", "$ Elements and Element Properties for re" // @
+"gion : 13_RIG-H1_yp" )
+jobfile.writec( "CASE INPUT 64", "$>PBARL    15      1               BAR" )
+jobfile.writec( "CASE INPUT 65", "$ Pset: ""13_RIG-H1_yp"" will be importe" // @
+"d as: ""pbarl.15""" )
+jobfile.writec( "CASE INPUT 66", "$>CBAR     136     15      109     111  " // @
+"   0.      0.      1." )
+jobfile.writec( "CASE INPUT 67", "$ Elements and Element Properties for re" // @
+"gion : 13_RIG-H1_yn" )
+jobfile.writec( "CASE INPUT 68", "$>PBARL    16      1               BAR" )
+jobfile.writec( "CASE INPUT 69", "$ Pset: ""13_RIG-H1_yn"" will be importe" // @
+"d as: ""pbarl.16""" )
+jobfile.writec( "CASE INPUT 70", "$>CBAR     101     16      141     143  " // @
+"   0.      0.      1." )
+jobfile.writec( "CASE INPUT 71", "$ Elements and Element Properties for re" // @
+"gion : 14_RIG-H3_xp" )
+jobfile.writec( "CASE INPUT 72", "$>PBARL    17      1               BAR" )
+jobfile.writec( "CASE INPUT 73", "$ Pset: ""14_RIG-H3_xp"" will be importe" // @
+"d as: ""pbarl.17""" )
+jobfile.writec( "CASE INPUT 74", "$>CBAR     220     17      213     218  " // @
+"   0.      0.      1." )
+jobfile.writec( "CASE INPUT 75", "$ Elements and Element Properties for re" // @
+"gion : 14_RIG-H3_xn" )
+jobfile.writec( "CASE INPUT 76", "$>PBARL    18      1               BAR" )
+jobfile.writec( "CASE INPUT 77", "$ Pset: ""14_RIG-H3_xn"" will be importe" // @
+"d as: ""pbarl.18""" )
+jobfile.writec( "CASE INPUT 78", "$>CBAR     216     18      223     219  " // @
+"   0.      0.      1." )
+jobfile.writec( "CASE INPUT 79", "$ Elements and Element Properties for re" // @
+"gion : 14_RIG-H3_yp" )
+jobfile.writec( "CASE INPUT 80", "$>PBARL    19      1               BAR" )
+jobfile.writec( "CASE INPUT 81", "$ Pset: ""14_RIG-H3_yp"" will be importe" // @
+"d as: ""pbarl.19""" )
+jobfile.writec( "CASE INPUT 82", "$>CBAR     234     19      200     201  " // @
+"   0.      0.      1." )
+jobfile.writec( "CASE INPUT 83", "$ Elements and Element Properties for re" // @
+"gion : 14_RIG-H3_yn" )
+jobfile.writec( "CASE INPUT 84", "$>PBARL    20      1               BAR" )
+jobfile.writec( "CASE INPUT 85", "$ Pset: ""14_RIG-H3_yn"" will be importe" // @
+"d as: ""pbarl.20""" )
+jobfile.writec( "CASE INPUT 86", "$>CBAR     226     20      215     214  " // @
+"   0.      0.      1." )
+jobfile.writec( "CASE INPUT 87", "$ Elements and Element Properties for re" // @
+"gion : 16_RIG-H5" )
+jobfile.writec( "CASE INPUT 88", "$>PBARL    21      1               BAR" )
+jobfile.writec( "CASE INPUT 89", "$ Pset: ""16_RIG-H5"" will be imported a" // @
+"s: ""pbarl.21""" )
+jobfile.writec( "CASE INPUT 90", "$>CBAR     144     21      125     126  " // @
+"   0.      0.      1." )
+jobfile.writec( "CASE INPUT 91", "$ Elements and Element Properties for re" // @
+"gion : 17_RIG-H6" )
+jobfile.writec( "CASE INPUT 92", "$>PBARL    22      1               BAR" )
+jobfile.writec( "CASE INPUT 93", "$ Pset: ""17_RIG-H6"" will be imported a" // @
+"s: ""pbarl.22""" )
+jobfile.writec( "CASE INPUT 94", "$>CBAR     504     22      469     470  " // @
+"   0.      0.      1." )
+jobfile.writec( "CASE INPUT 95", "$ Elements and Element Properties for re" // @
+"gion : 09_A_t-boards-PSU" )
+jobfile.writec( "CASE INPUT 96", "$>PSHELL   23      2       .0016   2    " // @
+"           2" )
+jobfile.writec( "CASE INPUT 97", "$ Pset: ""09_A_t-boards-PSU"" will be im" // @
+"ported as: ""pshell.23""" )
+jobfile.writec( "CASE INPUT 98", "$>CQUAD4   10000   23      1000    1001 " // @
+"   1004    1003" )
+jobfile.writec( "CASE INPUT 99", "$ Elements and Element Properties for re" // @
+"gion : 20_CBUSH" )
+jobfile.writec( "CASE INPUT 100", "$>PBUSH    24      K       1.+9    1.+9" // @
+"    1.+9    100.    1.+7    1.+7" )
+jobfile.writec( "CASE INPUT 101", "$ Pset: ""20_CBUSH"" will be imported a" // @
+"s: ""pbush.24""" )
+jobfile.writec( "CASE INPUT 102", "$>CBUSH    1       24      1       10  " // @
+"                            1" )
+jobfile.writec( "CASE INPUT 103", "$ Elements and Element Properties for r" // @
+"egion : 09_B_t-boards-MOD" )
+jobfile.writec( "CASE INPUT 104", "$>PSHELL   25      3       .0016   3   " // @
+"            3" )
+jobfile.writec( "CASE INPUT 105", "$ Pset: ""09_B_t-boards-MOD"" will be i" // @
+"mported as: ""pshell.25""" )
+jobfile.writec( "CASE INPUT 106", "$>CQUAD4   20000   25      2000    2001" // @
+"    2004    2003" )
+jobfile.writec( "CASE INPUT 107", "$ Elements and Element Properties for r" // @
+"egion : 09_C_t-boards-PROC" )
+jobfile.writec( "CASE INPUT 108", "$>PSHELL   26      4       .0016   4   " // @
+"            4" )
+jobfile.writec( "CASE INPUT 109", "$ Pset: ""09_C_t-boards-PROC"" will be " // @
+"imported as: ""pshell.26""" )
+jobfile.writec( "CASE INPUT 110", "$>CQUAD4   40000   26      4000    4001" // @
+"    4004    4003" )
+jobfile.writec( "CASE INPUT 111", "$ Elements and Element Properties for r" // @
+"egion : 09_D_t-boards-FPGA" )
+jobfile.writec( "CASE INPUT 112", "$>PSHELL   27      5       .0016   5   " // @
+"            5" )
+jobfile.writec( "CASE INPUT 113", "$ Pset: ""09_D_t-boards-FPGA"" will be " // @
+"imported as: ""pshell.27""" )
+jobfile.writec( "CASE INPUT 114", "$>CQUAD4   30000   27      3000    3001" // @
+"    3004    3003" )
+jobfile.writec( "CASE INPUT 115", "$ Elements and Element Properties for r" // @
+"egion : 21_CBUSH_CONTACT" )
+jobfile.writec( "CASE INPUT 116", "$>PBUSH    28      K       1.+9    1.+9" // @
+"    1.+9    0.     1000000.1000000." )
+jobfile.writec( "CASE INPUT 117", "$ Pset: ""21_CBUSH_CONTACT"" will be im" // @
+"ported as: ""pbush.28""" )
+jobfile.writec( "CASE INPUT 118", "$>CBUSH    100000  28      141     1044" // @
+"                            1" )
+jobfile.writec( "CASE INPUT 119", "$ Elements and Element Properties for r" // @
+"egion : 07_t-bandejas_FPGA" )
+jobfile.writec( "CASE INPUT 120", "$>PSHELL*  29              6           " // @
+"    6.9999998-4     6" )
+jobfile.writec( "CASE INPUT 121", "$ Pset: ""07_t-bandejas_FPGA"" will be " // @
+"imported as: ""pshell.29""" )
+jobfile.writec( "CASE INPUT 122", "$>CQUAD4   3000    29      324     325 " // @
+"    327     326" )
+jobfile.writec( "CASE INPUT 123", "$ Referenced Material Records" )
+jobfile.writec( "CASE INPUT 124", "$ Material Record : Al_7075-T7351" )
+jobfile.writec( "CASE INPUT 125", "$ Description of Material : Date: 18-Oc" // @
+"t-22           Time: 10:40:20" )
+jobfile.writec( "CASE INPUT 126", "$>MAT1*    1               7.0999998+10" // @
+"                    .33" )
+jobfile.writec( "CASE INPUT 127", "$ Material Record : PCB_PSU" )
+jobfile.writec( "CASE INPUT 128", "$ Description of Material : Date: 18-Oc" // @
+"t-22           Time: 10:40:20" )
+jobfile.writec( "CASE INPUT 129", "$>MAT1*    2               8.+10       " // @
+"                    .33" )
+jobfile.writec( "CASE INPUT 130", "$ Material Record : PCB_MOD" )
+jobfile.writec( "CASE INPUT 131", "$ Description of Material : Date: 18-Oc" // @
+"t-22           Time: 10:40:20" )
+jobfile.writec( "CASE INPUT 132", "$>MAT1*    3               8.+10       " // @
+"                    .33" )
+jobfile.writec( "CASE INPUT 133", "$ Material Record : PCB_PROC" )
+jobfile.writec( "CASE INPUT 134", "$ Description of Material : Date: 18-Oc" // @
+"t-22           Time: 10:40:20" )
+jobfile.writec( "CASE INPUT 135", "$>MAT1*    4               8.+10       " // @
+"                    .33" )
+jobfile.writec( "CASE INPUT 136", "$ Material Record : PCB_FPGA" )
+jobfile.writec( "CASE INPUT 137", "$ Description of Material : Date: 18-Oc" // @
+"t-22           Time: 10:40:20" )
+jobfile.writec( "CASE INPUT 138", "$>MAT1*    5               4.+10       " // @
+"                    .33" )
+jobfile.writec( "CASE INPUT 139", "$ Material Record : Bandeja_FPGA" )
+jobfile.writec( "CASE INPUT 140", "$ Description of Material : Date: 18-Oc" // @
+"t-22           Time: 10:40:20" )
+jobfile.writec( "CASE INPUT 141", "$>MAT1*    6               7.0999998+10" // @
+"                    .33" )
+jobfile.writec( "CASE INPUT 142", "$ Multipoint Constraints of the Entire " // @
+"Model" )
+jobfile.writec( "CASE INPUT 143", "$ ID conflict : the PATRAN MPC ID was 1" )
+jobfile.writec( "CASE INPUT 144", "$>RBE2     400027  17      123456  109 " // @
+"    111     200     201" )
+jobfile.writec( "CASE INPUT 145", "$ ID conflict : the PATRAN MPC ID was 2" )
+jobfile.writec( "CASE INPUT 146", "$>RBE2     400028  15      123456  106 " // @
+"    107     202     203" )
+jobfile.writec( "CASE INPUT 147", "$ ID conflict : the PATRAN MPC ID was 3" )
+jobfile.writec( "CASE INPUT 148", "$>RBE2     400029  13      123456  119 " // @
+"    120     209     210" )
+jobfile.writec( "CASE INPUT 149", "$ ID conflict : the PATRAN MPC ID was 4" )
+jobfile.writec( "CASE INPUT 150", "$>RBE2     400030  11      123456  121 " // @
+"    123     207     208" )
+jobfile.writec( "CASE INPUT 151", "$ ID conflict : the PATRAN MPC ID was 5" )
+jobfile.writec( "CASE INPUT 152", "$>RBE2     400031  10      123456  141 " // @
+"    143     219     220" )
+jobfile.writec( "CASE INPUT 153", "$ ID conflict : the PATRAN MPC ID was 6" )
+jobfile.writec( "CASE INPUT 154", "$>RBE2     400032  12      123456  139 " // @
+"    140     221     222" )
+jobfile.writec( "CASE INPUT 155", "$ ID conflict : the PATRAN MPC ID was 7" )
+jobfile.writec( "CASE INPUT 156", "$>RBE2     400033  14      123456  130 " // @
+"    131     215     216" )
+jobfile.writec( "CASE INPUT 157", "$ ID conflict : the PATRAN MPC ID was 8" )
+jobfile.writec( "CASE INPUT 158", "$>RBE2     400034  16      123456  133 " // @
+"    135     213     214" )
+jobfile.writec( "CASE INPUT 159", "$ Nodes of the Entire Model" )
+jobfile.writec( "CASE INPUT 160", "$>GRID*    1                           " // @
+"    -.1017500013113-.09324999898672" )
+jobfile.writec( "CASE INPUT 161", "$ Loads for Load Case : 01_FIX_bolts" )
+jobfile.writec( "CASE INPUT 162", "$ Displacement Constraints of Load Set " // @
+": FIX_123456" )
+jobfile.writec( "CASE INPUT 163", "$>SPC1     1       123456  1       THRU" // @
+"    8" )
+jobfile.writec( "CASE INPUT 164", "$ Referenced Coordinate Frames" )
+jobfile.writec( "CASE INPUT 165", "$>CORD2R   1               0.      0.  " // @
+"    0.      -1.     0.      0." )
+jobfile.writec( "BULK WRITE", "OFF" )
+jobfile.writei( "BULK INPUT 0", 0 )
+jobfile.writec( "CELL DTI POSITION", "START" )
+jobfile.writec( "FMS DTI POSITION", "START" )
+jobfile.writec( "EXEC DTI POSITION", "START" )
+jobfile.writec( "CASE DTI POSITION", "START" )
+jobfile.writec( "BULK DTI POSITION", "START" )
+jobfile.writec( "", "END" )
+jobfile.close(  )
+mscnastran_job.associate_subcases( "103", "SFEM_EUE", 1, ["Default"] )
+analysis_submit_2( "MSC.Nastran", "SFEM_EUE" )
+$# Patran 2025.2  (Student Edition) has obtained 0 concurrent license(s) from 
+$# FLEXlm per a request to execute on Windows node DESKTOP-0MNNQU5(
+$# 68ecc5ad7ef6) (Windows 6.2 (Build 9200: Service Pack 0)) at 20-Apr-26 
+$# 12:20:44.
+$# 
+$# Reading model information from the specified database, C:\Users\Pablo\ 
+$# Castillo\Desktop\MUSE\SEGUNDO\ CUATRIMESTRE\ESTRUCTURAS\TRABAJO\ HECHO\ A\ 
+$# MANO\Trabajo_EUE_25-26\05_FEM\Modos_propios.db.
+$# Messages output from the Patran 2025.2  (Student Edition) input deck 
+$# translator on April     20, 2026 at 12:20:44.
+$# 
+$# The NASTRAN input file, SFEM_EUE.bdf, has been successfully opened.
+$# 
+$# Translating 4 elements from the element property region 11_ESQ_xp_yp.
+$# 
+$# Translating 4 elements from the element property region 11_ESQ_xn_yp.
+$# 
+$# Translating 4 elements from the element property region 11_ESQ_xn_yn.
+$# 
+$# Translating 4 elements from the element property region 11_ESQ_xp_yn.
+$# 
+$# Translating 13 elements from the element property region 12_RIG-V1_xp.
+$# 
+$# Translating 13 elements from the element property region 12_RIG-V1_xn.
+$# 
+$# Translating 13 elements from the element property region 12_RIG-V1_yp.
+$# 
+$# Translating 13 elements from the element property region 12_RIG-V1_yn.
+$# 
+$# Translating 4 elements from the element property region 13_RIG-H1_xp.
+$# 
+$# Translating 4 elements from the element property region 13_RIG-H1_xn.
+$# 
+$# Translating 8 elements from the element property region 13_RIG-H1_yp.
+$# 
+$# Translating 8 elements from the element property region 13_RIG-H1_yn.
+$# 
+$# Translating 24 elements from the element property region 14_RIG-H3_xp.
+$# 
+$# Translating 20 elements from the element property region 14_RIG-H3_xn.
+$# 
+$# Translating 36 elements from the element property region 14_RIG-H3_yp.
+$# 
+$# Translating 32 elements from the element property region 14_RIG-H3_yn.
+$# 
+$# Translating 126 elements from the element property region 16_RIG-H5.
+$# 
+$# Translating 122 elements from the element property region 17_RIG-H6.
+$# 
+$# Translating 8 elements from the element property region 20_CBUSH.
+$# 
+$# Translating 108 elements from the element property region 21_CBUSH_CONTACT.
+$# 
+$# Translating 88 elements from the element property region 01_t-wall-delgadas.
+$# 
+$# Translating 64 elements from the element property region 05_t-tapa.
+$# 
+$# Translating 8 elements from the element property region 06_t-rig-base.
+$# 
+$# Translating 96 elements from the element property region 07_t-bandejas.
+$# 
+$# Translating 32 elements from the element property region 09_A_t-boards-PSU.
+$# 
+$# Translating 32 elements from the element property region 09_B_t-boards-MOD.
+$# 
+$# Translating 32 elements from the element property region 09_C_t-boards-PROC.
+$# 
+$# Translating 32 elements from the element property region 09_D_t-boards-FPGA.
+$# 
+$# Translating 32 elements from the element property region 07_t-bandejas_FPGA.
+$# 
+$# 29 property regions translated.
+$# 
+$# Translating 6 referenced material records.
+$# 
+$# Translating 8 multipoint constraints from the entire model.
+$# 
+$# Translating 457 nodes from the entire model.
+$# 
+$# Writing loads for Load Case : Default.
+$# 
+$# Translating nodal constraints in load set : FIX_123456.
+$# Writing interface element lbcs.
+$# 
+$# Translating 1 referenced coordinate frames.
+$# Total execution time in real seconds: 0.01
+$# Total execution time in CPU seconds: 0.171997
+$# 
+$# End of NASTRAN input file translation.
+$# Student Edition Patran Nastran Preference Patran 2025.2  (Student Edition) 
+$# has released 0 license(s) to FLEXlm at 20-Apr-26 12:20:44.
+$# The translation has completed successfully.
+$# Executing /bin/sh -c C:\Program 
+$# Files\MSC.Software\NaPa_SE\20252\Patran\bin\MscN
+$# astranExecute.exe -j SFEM_EUE -m bdf -x 20252 -c 
+$# %%prog=edu%auth=edu%arch=64% -v
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "C:\Users\Pablo Castillo\Desktop\MUSE\SEGUN" // @
+"DO CUATRIMESTRE\ESTRUCTURAS\TRABAJO HECHO A MANO\Trabajo_EUE_25-26\05_FEM" // @
+"\Modos_propios.db" )
+msc_dra_add_param( "JOBNAME", "SFEM_EUE" )
+msc_dra_add_param( "RESULTS FILE", "C:\Users\Pablo Castillo\Desktop\MUSE\S" // @
+"EGUNDO CUATRIMESTRE\ESTRUCTURAS\TRABAJO HECHO A MANO\Trabajo_EUE_25-26\05" // @
+"_FEM\sfem_eue.h5" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "0.0049999999" )
+msc_dra_add_param( "OBJECTIVE FUNCTION", "ON" )
+msc_dra_add_param( "DESIGN CONSTRAINTS", "ON" )
+msc_dra_add_param( "DESIGN VARIABLES", "ON" )
+msc_dra_add_param( "COMBINE RESULTCASES", "ON" )
+msc_dra_add_param( "COMBINE MODULES", "OFF" )
+msc_dra_add_param( "SPLINE IMPORT DATA", "OFF" )
+msc_dra_add_param( "SPLINE POST DATA", "ZERO" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "ON" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "CREATE P-ORDER FIELD", "" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Both        " )
+msc_dra_add_param( "NASTRAN VERSION", "" )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "SFEM_EUE", "Attach HDF5 Results File",  @
+"C:\Users\Pablo Castillo\Desktop\MUSE\SEGUNDO CUATRIMESTRE\ESTRUCTURAS\TRA" // @
+"BAJO HECHO A MANO\Trabajo_EUE_25-26\05_FEM\sfem_eue.h5", TRUE )
+$# Attaching Direct Results Access file: "C:\Users\Pablo 
+$# Castillo\Desktop\MUSE\SEGUNDO CUATRIMESTRE\ESTRUCTURAS\TRABAJO HECHO A 
+$# MANO\Trabajo_EUE_25-26\05_FEM\sfem_eue.h5"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Mode 1: Freq.=206.202
+$# Processing result sub-case: Mode 2: Freq.=248.231
+$# Processing result sub-case: Mode 3: Freq.=256.041
+$# Processing result sub-case: Mode 4: Freq.=269.806
+$# Processing result sub-case: Mode 5: Freq.=290.897
+$# Processing result sub-case: Mode 6: Freq.=352.586
+$# Processing result sub-case: Mode 7: Freq.=429.783
+$# Processing result sub-case: Mode 8: Freq.=443.012
+$# Processing result sub-case: Mode 9: Freq.=447.652
+$# Processing result sub-case: Mode 10: Freq.=466.832
+$# Processing result sub-case: Mode 11: Freq.=500.548
+$# Processing result sub-case: Mode 12: Freq.=558.483
+$# Processing result sub-case: Mode 13: Freq.=581.195
+$# Processing result sub-case: Mode 14: Freq.=592.307
+$# Processing result sub-case: Mode 15: Freq.=593.498
+$# Processing result sub-case: Mode 16: Freq.=593.947
+$# Processing result sub-case: Mode 17: Freq.=606.322
+$# Processing result sub-case: Mode 18: Freq.=632.296
+$# Processing result sub-case: Mode 19: Freq.=634.364
+$# Processing result sub-case: Mode 20: Freq.=638.337
+$# Processing result sub-case: Mode 21: Freq.=643.013
+$# Processing result sub-case: Mode 22: Freq.=647.245
+$# Processing result sub-case: Mode 23: Freq.=648.55
+$# Processing result sub-case: Mode 24: Freq.=666.224
+$# Processing result sub-case: Mode 25: Freq.=682.164
+$# Processing result sub-case: Mode 26: Freq.=700.57
+$# Processing result sub-case: Mode 27: Freq.=727.317
+$# Processing result sub-case: Mode 28: Freq.=765.503
+$# Processing result sub-case: Mode 29: Freq.=780.337
+$# Processing result sub-case: Mode 30: Freq.=784.947
+$# Processing result sub-case: Mode 31: Freq.=793.33
+$# Processing result sub-case: Mode 32: Freq.=806.837
+$# Processing result sub-case: Mode 33: Freq.=836.075
+$# Processing result sub-case: Mode 34: Freq.=837.164
+$# Processing result sub-case: Mode 35: Freq.=838.027
+$# Processing result sub-case: Mode 36: Freq.=838.834
+$# Processing result sub-case: Mode 37: Freq.=840.471
+$# Processing result sub-case: Mode 38: Freq.=892.937
+$# Processing result sub-case: Mode 39: Freq.=896.061
+$# Processing result sub-case: Mode 40: Freq.=905.988
+$# Processing result sub-case: Mode 41: Freq.=913.772
+$# Processing result sub-case: Mode 42: Freq.=930.177
+$# Processing result sub-case: Mode 43: Freq.=933.455
+$# Processing result sub-case: Mode 44: Freq.=941.888
+$# Processing result sub-case: Mode 45: Freq.=971.669
+$# Processing result sub-case: Mode 46: Freq.=985.597
+$# Processing result sub-case: Mode 47: Freq.=1001.21
+$# Processing result sub-case: Mode 48: Freq.=1042.79
+$# Processing result sub-case: Mode 49: Freq.=1046.17
+$# Processing result sub-case: Mode 50: Freq.=1053.21
+$# Processing result sub-case: Mode 51: Freq.=1053.57
+$# Processing result sub-case: Mode 52: Freq.=1054.12
+$# Processing result sub-case: Mode 53: Freq.=1063.75
+$# Processing result sub-case: Mode 54: Freq.=1064.31
+$# Processing result sub-case: Mode 55: Freq.=1066.16
+$# Processing result sub-case: Mode 56: Freq.=1070.13
+$# Processing result sub-case: Mode 57: Freq.=1085.05
+$# Processing result sub-case: Mode 58: Freq.=1089.51
+$# Processing result sub-case: Mode 59: Freq.=1097.76
+$# Processing result sub-case: Mode 60: Freq.=1131.57
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.047
+$# *** End:   Attach Result File ***
+$# Warning reported from application Results
+$#     No result selected
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 5: Freq.=290.897", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 5: Freq.=290.897", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 6: Freq.=352.586", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 6: Freq.=352.586", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 7: Freq.=429.783", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 7: Freq.=429.783", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -80.883347, -0.652862, -149.423050 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 11: Freq.=500.548", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 11: Freq.=500.548", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 8: Freq.=443.012", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 8: Freq.=443.012", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 1: Freq.=206.202", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 1: Freq.=206.202", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 2: Freq.=248.231", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 2: Freq.=248.231", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 3: Freq.=256.041", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 3: Freq.=256.041", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 2: Freq.=248.231", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 2: Freq.=248.231", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 3: Freq.=256.041", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 3: Freq.=256.041", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 4: Freq.=269.806", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 4: Freq.=269.806", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 5: Freq.=290.897", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 5: Freq.=290.897", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 6: Freq.=352.586", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 6: Freq.=352.586", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 7: Freq.=429.783", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 7: Freq.=429.783", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 8: Freq.=443.012", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 8: Freq.=443.012", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 9: Freq.=447.652", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 9: Freq.=447.652", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -56.877056, -0.781706, -148.363480 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 6: Freq.=352.586", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 6: Freq.=352.586", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 9: Freq.=447.652", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 9: Freq.=447.652", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 10: Freq.=466.832", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "MAG", "Default", "DeriveAverage", "All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"RelativeToGeom:ORIG"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector", "SC1:DEFAULT",  @
+"A1:Mode 10: Freq.=466.832", "Eigenvectors", "Translational", "(NON-LAYERED)", @
+ "", "Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 10, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:Model=0.1",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF", "RelativeToGeom:ORIG"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -84.374626, -11.830643, -140.007919 )
+ga_view_aa_set( -80.842850, -0.654018, -128.184097 )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_file_close.goquit(  )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 20-Apr-26 12:29:35
+$# Session file patran.ses.01 stopped recording at 20-Apr-26 12:29:35

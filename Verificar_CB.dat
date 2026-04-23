@@ -1,0 +1,21 @@
+SOL 103
+CEND
+TITLE = VERIFICACION EUE-RQ-7
+METHOD = 1
+SPC = 1
+K2GG = KAAX
+M2GG = MAAX
+BEGIN BULK
+EIGRL, 1, 0., 2000.
+INCLUDE 'job_reduccion_cb.pch'
+SPOINT, 10001, THRU, 10050
+SPC1, 1, 123456, 1, THRU, 8
+GRID, 1, , 0.0, 0.0, 0.0
+GRID, 2, , 0.0, 0.0, 0.0
+GRID, 3, , 0.0, 0.0, 0.0
+GRID, 4, , 0.0, 0.0, 0.0
+GRID, 5, , 0.0, 0.0, 0.0
+GRID, 6, , 0.0, 0.0, 0.0
+GRID, 7, , 0.0, 0.0, 0.0
+GRID, 8, , 0.0, 0.0, 0.0
+ENDDATA
